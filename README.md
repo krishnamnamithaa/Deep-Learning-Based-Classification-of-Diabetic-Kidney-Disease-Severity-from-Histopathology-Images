@@ -176,15 +176,15 @@ The Vision Transformer (ViT-B/16) model demonstrated superior feature learning c
 
 ---
 
-##  EfficientNet-B0 Training Results
+##   EfficientNet-Bo Training Results
 
 <p align="center">
-  <img src="./efficientnet_b0_ordinal.png" alt="EfficientNet Results" width="1000">
+  <img src="efficientnet_bo_ordinal.png" alt="EfficientNet Results" width="1000"/>
 </p>
 
 EfficientNet-B0 served as a lightweight baseline architecture and provided competitive performance while maintaining computational efficiency.
 
----.
+---
 
 ---
 
