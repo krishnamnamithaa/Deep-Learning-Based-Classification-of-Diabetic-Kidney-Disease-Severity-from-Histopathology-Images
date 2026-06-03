@@ -122,12 +122,27 @@ Disease Severity Prediction
 
 ---
 
-## Model Visualization
+
+# Model Visualization
+
+The proposed framework consists of data acquisition, image preprocessing, deep feature extraction, Vision Transformer learning, soft ensemble fusion, and disease severity prediction.
 
 <p align="center">
-  <img src="model_architecture.png" alt="Model Architecture" width="1000"/>
+  <img src="model%20architecture.png" alt="Model Architecture" width="1000"/>
 </p>
 
+**Architecture Workflow**
+
+1. Histopathology Image Acquisition
+2. Image Preprocessing and Augmentation
+3. CNN-Based Feature Extraction
+4. Vision Transformer (ViT-B/16) Learning
+5. EfficientNet-B0 Learning
+6. Soft Ensemble Fusion
+7. Disease Severity Classification
+8. Performance Evaluation
+
+---
 ---
 
 # Results
@@ -154,7 +169,7 @@ The performance of the models was evaluated using:
 ## ViT-B/16 Training Results
 
 <p align="center">
-  <img src="vit_training_results.png" alt="ViT Training Results" width="1000"/>
+  <img src="vit_tranning_results.png" alt="ViT Training Results" width="1000"/>
 </p>
 
 The Vision Transformer (ViT-B/16) model demonstrated superior feature learning capability and achieved strong classification performance for diabetic kidney disease severity prediction.
@@ -164,7 +179,7 @@ The Vision Transformer (ViT-B/16) model demonstrated superior feature learning c
 ## EfficientNet-B0 Training Results
 
 <p align="center">
-  <img src="efficientnet_b0_ordinal.png" alt="EfficientNet-B0 Training Results" width="1000"/>
+  <img src="efficientnet_b0_ordinal.png" alt="EfficientNet Results" width="1000"/>
 </p>
 
 EfficientNet-B0 served as a lightweight baseline architecture and provided competitive performance while maintaining computational efficiency.
@@ -174,9 +189,8 @@ EfficientNet-B0 served as a lightweight baseline architecture and provided compe
 ## Model Performance Comparison
 
 <p align="center">
-  <img src="model.comparison.png.png" alt="Model Comparison Results" width="1000"/>
+  <img src="model.comprasion,png.png" alt="Model Comparison Results" width="1000"/>
 </p>
-
 ### Performance Summary
 
 | Model | Validation Accuracy | Test Accuracy |
@@ -192,7 +206,7 @@ The ensemble model achieved the highest validation and test accuracy among all e
 ## Final Ensemble Evaluation Results
 
 <p align="center">
-  <img src="soft_ensemble_png.png" alt="Final Ensemble Results" width="1000"/>
+  <img src="soft_essemble_png.png" alt="Final Ensemble Results" width="1000"/>
 </p>
 
 ### Final Ensemble Metrics
