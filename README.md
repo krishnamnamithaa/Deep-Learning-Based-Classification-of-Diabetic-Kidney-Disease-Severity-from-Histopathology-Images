@@ -2,42 +2,25 @@
 
 ## Overview
 
-Diabetic Kidney Disease (DKD) is one of the leading causes of chronic kidney failure worldwide. Early diagnosis and accurate severity classification are essential for improving patient outcomes and enabling effective treatment planning.
+Diabetic Kidney Disease (DKD) is one of the leading causes of chronic kidney failure worldwide. Early diagnosis and accurate severity classification are essential for improving patient outcomes and treatment planning.
 
-This project presents a Deep Learning-based framework for automated classification of diabetic kidney disease severity using histopathology images. The proposed system leverages advanced deep learning techniques to analyze kidney tissue images and classify disease severity levels with high accuracy.
-
-The framework integrates Convolutional Neural Networks (CNNs), Transformer-based architectures, Ensemble Learning techniques, and Data Augmentation strategies to improve classification performance and robustness.
+This project presents a Deep Learning-based framework for automated classification of diabetic kidney disease severity from histopathology images. The framework leverages CNNs, Vision Transformers (ViT), Ensemble Learning, and Data Augmentation techniques to improve prediction accuracy and robustness.
 
 ---
 
 ## Problem Statement
 
-Manual examination of kidney histopathology images is time-consuming and requires extensive expertise from pathologists. The objective of this project is to automate diabetic kidney disease severity classification using artificial intelligence and deep learning techniques, thereby improving diagnostic efficiency and supporting healthcare professionals.
+Manual analysis of kidney histopathology images is time-consuming and requires expert pathologists. This project aims to automate the classification process using Artificial Intelligence and Deep Learning to support healthcare professionals and improve diagnostic efficiency.
 
 ---
 
 ## Objectives
 
-* Develop an automated deep learning framework for diabetic kidney disease severity classification.
-* Perform image preprocessing and augmentation.
-* Extract discriminative features from histopathology images.
-* Train and evaluate deep learning models.
-* Improve classification accuracy and model generalization.
-* Support medical diagnosis through AI-driven solutions.
-
----
-
-## Features
-
-* Histopathology Image Analysis
-* Deep Learning-Based Classification
-* CNN Feature Extraction
-* Transformer-Based Learning
-* Ensemble Learning Strategies
-* Soft Voting Classification
-* Automated Severity Prediction
-* Medical Image Processing
-* Performance Evaluation
+* Automate diabetic kidney disease severity classification.
+* Apply deep learning techniques to medical image analysis.
+* Improve classification accuracy using ensemble learning.
+* Reduce overfitting through data augmentation.
+* Support AI-assisted medical diagnosis.
 
 ---
 
@@ -76,88 +59,39 @@ This project utilizes the **KidneyAI Dataset**, a publicly available histopathol
 
 https://zenodo.org/records/17456927
 
-### Dataset Description
-
-The KidneyAI Dataset contains PAS-stained glomerulus images extracted from whole-slide kidney histopathology images. The dataset is specifically designed to support artificial intelligence and deep learning research in diabetic kidney disease severity classification.
-
-The images are annotated by expert kidney pathologists and categorized into multiple severity levels, enabling supervised learning and performance evaluation of machine learning and deep learning models.
-
-### Dataset Processing
-
-* Image Collection
-* Image Resizing
-* Image Normalization
-* Data Augmentation
-* Dataset Splitting
-* Feature Extraction
-* Model Training and Validation
-
 ### Deep Learning Concepts Used
 
 #### Convolutional Neural Networks (CNNs)
 
-Convolutional Neural Networks (CNNs) are widely used for extracting local texture and tissue features from medical images. CNN architectures automatically learn hierarchical feature representations that help identify disease-specific patterns within histopathology images.
+CNNs are widely used for extracting local texture and tissue features from medical images.
 
 #### Transformer-Based Models
 
-Transformer-based models have demonstrated strong performance in complex medical image classification tasks by capturing long-range dependencies and global contextual information from image data.
+Transformer architectures capture long-range dependencies and global contextual information from image data.
 
 #### Ensemble Learning
 
-Ensemble learning combines predictions from multiple deep learning models to improve robustness, reduce prediction variance, and increase classification stability.
+Combines predictions from multiple deep learning models to improve robustness and classification stability.
 
 #### Soft Ensemble Methods
 
-Soft ensemble methods use probability-based fusion strategies where prediction probabilities generated by multiple models are combined to produce the final classification result.
+Probability-based fusion strategies are used to generate final predictions.
 
 #### Data Augmentation
 
-Data augmentation techniques such as rotation, flipping, zooming, brightness adjustment, and translation are applied to reduce overfitting and improve model generalization.
-
-### Model Components
-
-* Convolutional Neural Networks (CNNs)
-* Deep Feature Extraction
-* Transformer-Based Learning
-* Ensemble Learning
-* Soft Voting Classification
-* Data Augmentation
-* Histopathology Image Processing
+Rotation, flipping, zooming, and brightness adjustments improve model generalization and reduce overfitting.
 
 ---
 
 ## Methodology
 
-### Step 1: Data Collection
-
-Collect histopathology images and severity annotations.
-
-### Step 2: Data Preprocessing
-
-* Image Resizing
-* Image Normalization
-* Data Augmentation
-* Dataset Splitting
-
-### Step 3: Feature Extraction
-
-Extract meaningful image features using CNN and Transformer architectures.
-
-### Step 4: Model Training
-
-Train deep learning models using labeled histopathology images.
-
-### Step 5: Ensemble Learning
-
-Combine predictions from multiple models using soft ensemble strategies.
-
-### Step 6: Evaluation
-
-Evaluate performance using classification metrics.
-
-### Step 7: Prediction
-
-Predict diabetic kidney disease severity from unseen histopathology images.
+1. Data Collection
+2. Image Preprocessing
+3. Feature Extraction
+4. Model Training
+5. Ensemble Learning
+6. Evaluation
+7. Severity Prediction
 
 ---
 
@@ -175,15 +109,11 @@ CNN Feature Extraction
 
 ↓
 
-Transformer-Based Feature Learning
+Vision Transformer Learning
 
 ↓
 
-Ensemble Learning
-
-↓
-
-Soft Voting Classification
+Soft Ensemble Fusion
 
 ↓
 
@@ -194,35 +124,78 @@ Disease Severity Prediction
 ## Model Visualization
 
 <p align="center">
-  <img src="images/model_architecture.png" alt="Model Architecture" width="700"/>
+  <img src="images/model_architecture.png" alt="Model Architecture" width="1000"/>
 </p>
 
 ---
 
 ## Results
 
-The proposed framework successfully classifies diabetic kidney disease severity from histopathology images and demonstrates robust performance across multiple evaluation metrics.
+The proposed framework successfully classifies diabetic kidney disease severity from histopathology images and demonstrates strong performance across multiple evaluation metrics.
 
 ### Evaluation Metrics
 
 * Accuracy
-* Precision
-* Recall
-* F1-Score
-* Confusion Matrix
-* ROC Curve
+* Balanced Accuracy
+* Macro F1-Score
+* Weighted F1-Score
+* Macro AUC
+* Cohen's Kappa
+* QWK
+* MCC
+* Top-2 Accuracy
+* Log Loss
 
-### Result Visualization
+---
+
+### ViT-B/16 Training Results
 
 <p align="center">
-  <img src="images/results.png" alt="Results" width="700"/>
+  <img src="images/vit_training_results.png" alt="ViT-B16 Results" width="1000"/>
 </p>
 
-### Sample Output
+---
+
+### EfficientNet-B0 Training Results
 
 <p align="center">
-  <img src="images/sample_output.png" alt="Sample Output" width="700"/>
+  <img src="images/efficientnet_training_results.png" alt="EfficientNet Results" width="1000"/>
 </p>
+
+---
+
+### Model Performance Comparison
+
+<p align="center">
+  <img src="images/model_comparison_results.png" alt="Model Comparison" width="1000"/>
+</p>
+
+| Model          | Validation Accuracy | Test Accuracy |
+| -------------- | ------------------- | ------------- |
+| ConvNeXt-Small | 84.3%               | 83.1%         |
+| ViT-B/16       | 86.7%               | 85.3%         |
+| Ensemble Model | 88.1%               | 87.2%         |
+
+---
+
+### Final Ensemble Evaluation Results
+
+<p align="center">
+  <img src="images/final_ensemble_results.png" alt="Final Ensemble Results" width="1000"/>
+</p>
+
+| Metric            | Score  |
+| ----------------- | ------ |
+| Accuracy          | 0.7169 |
+| Balanced Accuracy | 0.7194 |
+| Macro F1          | 0.7127 |
+| Weighted F1       | 0.7010 |
+| Macro AUC         | 0.9192 |
+| Kappa             | 0.6098 |
+| QWK               | 0.8747 |
+| MCC               | 0.6196 |
+| Top-2 Accuracy    | 0.9779 |
+| Log Loss          | 0.5946 |
 
 ---
 
@@ -234,12 +207,13 @@ Deep-Learning-Based-Classification-of-Diabetic-Kidney-Disease-Severity-from-Hist
 ├── dataset/
 ├── images/
 │   ├── model_architecture.png
-│   ├── results.png
-│   └── sample_output.png
-├── models/
+│   ├── vit_training_results.png
+│   ├── efficientnet_training_results.png
+│   ├── model_comparison_results.png
+│   └── final_ensemble_results.png
 ├── notebooks/
-├── results/
 ├── src/
+├── models/
 ├── requirements.txt
 └── README.md
 ```
@@ -250,7 +224,7 @@ Deep-Learning-Based-Classification-of-Diabetic-Kidney-Disease-Severity-from-Hist
 
 * Medical Image Analysis
 * Kidney Disease Diagnosis
-* Healthcare Artificial Intelligence
+* Healthcare AI
 * Clinical Decision Support Systems
 * Biomedical Research
 
@@ -267,10 +241,3 @@ Owner and Developer of this Project
 ## License
 
 This project is intended for academic and research purposes only.
-
----
-
-## Keywords
-
-Deep Learning, CNN, Transformer, Ensemble Learning, Histopathology Images, Diabetic Kidney Disease, KidneyAI Dataset, Medical Imaging, Healthcare AI, TensorFlow, Keras, Image Classification, Artificial Intelligence
-
